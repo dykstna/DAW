@@ -18,5 +18,15 @@ CALL get_variable();
 /*EJERCICIO 1*/
 
 /*EJEMPLO variable definidas por usuario*/
-SET @uservar=1;
-SELECT @uservar;
+SET @uservar;
+DELIMITER$$
+--DROP PROCEDURE IF EXISTS get_variable$$
+CREATE PROCEDURE @uservar(INOUT a INT)
+BEGIN
+    DECLARE texto VARCHAR(50);
+    SET a=a+1
+    SELECT 
+END
+$$
+CALL @uservar();
+SELECT a;

@@ -1,0 +1,22 @@
+HTML/XML
+- Auto Rename Tag
+
+Cambios Web
+-Live Server
+
+Probar pedazos de codigo para buscar errores
+-Code Runner
+
+Muestra errores en tiempo real
+-Error Lens
+
+Modifica el color de la identacion
+-indent Rainbow
+
+Muestra posibles rutas
+-Path intellisense
+
+Para javascript
+JavaScript (ES6)
+ESLint (Remarcar errores)
+

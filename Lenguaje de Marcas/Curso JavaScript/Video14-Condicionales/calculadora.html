@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num1 = prompt("Introduce el primer numero");
+        var num2 = prompt("Introduce el segundo numero");
+        if (!isNaN(num1) && !isNaN(num2)) {
+            var operacion = prompt("¿Que operación deseas realizar: suma/resta/multiplicacion/division");
+            if (operacion == "suma") {
+                alert(parseInt(num1) + parseInt(num2));
+            } else if (operacion == "resta") {
+                alert(parseInt(num1) - parseInt(num2));
+            } else if (operacion == "multiplicacion" || operacion == "multiplicación") {
+                alert(parseInt(num1) * parseInt(num2));
+            } else if (operacion == "division") {
+                alert(parseInt(num1) / parseInt(num2));
+            } else {
+                alert("Operacion no contemplada");
+            }
+        } else {
+            if(typeof(num1)=="String" || typeof(num2)=="String"){
+                alert("No se puede operar los numeros");
+            }else{
+                alert("Error no identificado");
+            }
+            
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

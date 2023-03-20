@@ -1,0 +1,63 @@
+DEMO XPath
+
+Abrir XPathVisualizer y usar ALT para desplegar el menú y poder abrir un fichero XML
+
+Selección de nodos con ruta absoluta:
+/biblioteca/obras/libro/autor
+
+Selección de nodos con ruta relativa:
+//autor
+
+Observa la diferencia con:
+//libro/autor
+
+Selección del texto de un nodo:
+//autor/text()
+
+Selección de atributos:
+//autor/@fechaNacimiento
+
+Selección de todos los atributos:
+//@*
+
+Selección de todos los atributos del nodo autor:
+//autor/@*
+
+Operador .. para acceder al nodo padre:
+//numObras/..
+//numObras/../..
+
+Selección de varios nodos con el operador |:
+//autores/autor | //titulo
+
+Los predicados en XPath obligan a que los nodos cumplan una o varias condiciones:
+//libro/autor[text()="Mario Vargas Llosa"]
+//libro/fechaPublicacion[@año = "1973"]
+//libro/fechaPublicacion[@año > "1950"]
+//libro/fechaPublicacion[@año > "1950"][@año < "1970"]
+//libro/fechaPublicacion[@año > "1950" and @año < "1970"]
+//libro/fechaPublicacion[@año > "1950" or @año < "1970"]
+
+A los predicados se les puede añadir más pasos:
+//libro/autor[text()="Mario Vargas Llosa"]/@nacionalidad
+//libro/fechaPublicacion[@año > "1950"][@año < "1970"]/../autor
+
+Selección de ocurrencias:
+//libro[1]
+//libro[last()]
+//libro[last()-1]
+
+//autor[1]
+Esto nos devuelve el primer autor que cuelgue de cualquier nodo del documento
+
+//libro[1]/autor[1]
+
+Expresiones anidadas. Podemos "incrustar" una expresión dentro de otra:
+La siguiente expresión devuelve el nombre de los autores que tengan más de 50 obras 
+//autores/autor[numObras>"50"]/nombre/text()
+
+La siguiente expresion devuelve los nodos de títulos de los libros un autor por su nombre
+//libro[autor="Mario Vargas Llosa"]
+
+Si cambiamos el nombre del autor por la primera expresión tendríamos:
+//libro[autor=//autores/autor[numObras>"50"]/nombre/text()]

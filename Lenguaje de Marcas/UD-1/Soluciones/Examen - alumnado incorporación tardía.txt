@@ -1,0 +1,29 @@
+<empleados>
+<empleado id="22554488T">
+<nombre>Juan Roig Sánchez</nombre>
+<puesto> Distribuidor</puesto>
+<dispositivos>
+<dispositivo>
+<tipo>móvil</tipo>
+<marca>Huawei</marca>
+<modelo>P10</modelo>
+</dispositivo>
+<dispositivo>
+<tipo>tablet</tipo>
+<marca>Samsung</marca>
+<modelo>S8</modelo>
+</dispositivo>
+</dispositivos>
+</empleado>
+<empleado id="33445522G">
+<nombre>Ana Gil Romero</nombre>
+<puesto>Comercial</puesto>
+<dispositivos>
+<dispositivo>
+<tipo>móvil</tipo>
+<marca>Huawei</marca>
+<modelo>P9</modelo>
+</dispositivo>
+</dispositivos>
+</empleado>
+</empleados>

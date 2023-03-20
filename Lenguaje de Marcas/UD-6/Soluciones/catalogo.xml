@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo>
+	<producto descripcion="Cardigan Sweater" imagen_producto="cardigan.jpg">
+		<modelo genero="Hombre">
+			<id_modelo>QWZ5671</id_modelo>
+			<precio>39.95</precio>
+			<tallas>
+				<medium>
+					<color talla="M" imagen="red_cardigan.jpg">Red</color>
+					<color talla="M" imagen="burgundy_cardigan.jpg">Burgundy</color>
+				</medium>
+				<large>
+					<color talla="L" imagen="red_cardigan.jpg">Red</color>
+					<color talla="L" imagen="burgundy_cardigan.jpg">Burgundy</color>
+				</large>
+			</tallas>
+		</modelo>
+		<modelo genero="Mujer">
+			<id_modelo>RRX9856</id_modelo>
+			<precio>42.50</precio>
+			<tallas>
+				<small>
+					<color talla="S" imagen="red_cardigan.jpg">Red</color>
+					<color talla="S" imagen="navy_cardigan.jpg">Navy</color>
+					<color talla="S" imagen="burgundy_cardigan.jpg">Burgundy</color>
+				</small>
+				<medium>
+					<color talla="M" imagen="red_cardigan.jpg">Red</color>
+					<color talla="M" imagen="navy_cardigan.jpg">Navy</color>
+					<color talla="M" imagen="burgundy_cardigan.jpg">Burgundy</color>
+					<color talla="M" imagen="black_cardigan.jpg">Black</color>
+				</medium>
+				<large>
+					<color talla="L" imagen="navy_cardigan.jpg">Navy</color>
+					<color talla="L" imagen="black_cardigan.jpg">Black</color>
+				</large>
+				<xlarge>
+					<color talla="XL" imagen="burgundy_cardigan.jpg">Burgundy</color>
+					<color talla="XL" imagen="black_cardigan.jpg">Black</color>
+				</xlarge>
+			</tallas>
+			<opiniones>
+				<opinion>Muy ponible en cualquier situación</opinion>
+			</opiniones>
+		</modelo>
+	</producto>
+	<producto descripcion="Pantalon vaquero" imagen_producto="vaquero.jpg">
+		<modelo genero="Mujer">
+			<id_modelo>TQW1156</id_modelo>
+			<precio>38.95</precio>
+			<tallas>
+				<small>
+					<color talla="S" imagen="red_vaquero.jpg">Red</color>
+					<color talla="S" imagen="black_vaquero.jpg">Black</color>
+					<color talla="S" imagen="blue_vaquero.jpg">Blue</color>
+				</small>
+				<medium>
+					<color talla="M" imagen="red_vaquero.jpg">Red</color>
+					<color talla="M" imagen="black_vaquero.jpg">Black</color>
+					<color talla="M" imagen="blue_vaquero.jpg">Blue</color>
+					<color talla="M" imagen="green_vaquero.jpg">Green</color>
+				</medium>
+				<large>
+					<color talla="L" imagen="blue_vaquero.jpg">Blue</color>
+					<color talla="L" imagen="black_vaquero.jpg">Black</color>
+				</large>
+				<xlarge>
+					<color talla="XL" imagen="blue_vaquero.jpg">Blue</color>
+					<color talla="XL" imagen="black_vaquero.jpg">Black</color>
+				</xlarge>
+			</tallas>
+		</modelo>
+	</producto>
+</catalogo>

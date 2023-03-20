@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="Cuerpo">
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quaerat sequi. Vitae saepe consectetur autem
+            sit qui modi obcaecati, magnam placeat odit. Laborum neque, cumque corporis sit provident totam commodi?</p>
+    </div>
+
+    <script>
+        var Cuerpo = document.getElementById("Cuerpo");
+        var ColorWeb = prompt("Introduce un color:Azul/Verde/Rojo").toLowerCase();//Almacena todo en minnusculas
+        /*if (ColorWeb == "azul") {
+            Cuerpo.style.backgroundColor = "blue";
+        } else if (ColorWeb == "verde") {
+            Cuerpo.style.backgroundColor = "green";
+        } else if (ColorWeb == "rojo") {
+            Cuerppo.style.backgroundColor == "red";
+        } else {
+            alert("El color no esta contemplado");
+        }*/
+        if(ColorWeb!="azul" && ColorWeb!="verde" && ColorWeb!="rojo"){
+            alert("Ese color no esta contemplado");
+        }else if(ColorWeb=="azul"){
+            Cuerpo.style.backgroundColor="blue";
+        }else if(ColorWeb=="verde"){
+            Cuerpo.style.backgroundColor="green";
+        }else{
+            Cuerpo.style.backgroundColor="red";
+        }
+
+    </script>
+
+</body>
+
+</html>

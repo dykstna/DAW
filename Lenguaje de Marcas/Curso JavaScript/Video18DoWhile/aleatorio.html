@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <table width="25%" border="0">
+        <tr>
+            <td>
+                <label for="texfield"></label>
+                <input type="text" name="textfield" id="c_mensaje">
+            </td>
+            <td>
+                <label for="textfield2"></label>
+                <input type="text" name="textfield2" id="c_intentos">
+            </td>
+        </tr>
+    </table>
+    <script>
+        var aleatorio=Math.round(Math.random()*100);
+        var minum,intentos;
+        minum=0;
+        intentos=0;
+        var mensaje=document.getElementById("c_mensaje");
+        var intentosconsumidos=document.getElementById("c_intentos");
+        do{
+            minum=prompt("Introuce un nº entre 0 y 100");
+            if(aleatorio>minum){
+                mensaje.value="Más Alto";
+                mensaje.style.fontSize="18px";
+            }
+            if(aleatorio<minum){
+                mensaje.value="Más Bajo";
+                mensaje.style.fontSize="18px";
+            }
+            intentos++;
+            intentosconsumidos.value=intentos;
+            intentosconsumidos.style.fontSize="18px";
+            intentosconsumidos.style.color="red";
+            intentosconsumidos.style.textAlign="center";
+        }while(aleatorio!=minum);
+
+        //document.write("Correcto, has consumido "+intentos+" intentos.");
+        mensaje.value="Correcto!";
+        mensaje.style.color="red";
+        mensaje.style.fontSize="25px";
+
+    </script>
+</body>
+</html>

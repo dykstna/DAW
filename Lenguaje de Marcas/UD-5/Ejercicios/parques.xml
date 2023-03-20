@@ -1,0 +1,42 @@
+<parques>
+<parque tipologia="urbano" apertura="07:00:00" cierre="00:00:00">
+<nombre>Parque del Alamillo</nombre>
+<direccion>
+Cortijo del Alamillo, Isla de la Cartuja, 41092 Sevilla
+</direccion>
+<servicios cafeteria="true">
+<servicio>Patinaje</servicio>
+<servicio>Bicicleta</servicio>
+<servicio>Zona de perros</servicio>
+</servicios>
+<fechaInaugura>2019-01-31</fechaInaugura>
+<contacto>
+<telefono>608890299</telefono>
+</contacto>
+</parque>
+<parque tipologia="acuatico" apertura="10:00:00" cierre="19:00:00">
+<nombre>Aqualand</nombre>
+<direccion>Calle Cuba, 10, 29620. Torremolinos, Málaga</direccion>
+<servicios>
+<servicio>Adrenaline Fun.</servicio>
+<servicio>Kidzworld.</servicio>
+<servicio>Family Fun.</servicio>
+<servicio>Chill out and Play.</servicio>
+</servicios>
+<contacto>
+<telefono>952388888</telefono>
+</contacto>
+</parque>
+<parque tipologia="tematico" aforo="1000" apertura="10:00:00" cierre="19:00:00">
+<nombre>Parque de las Ciencias</nombre>
+<direccion>Av. de la Ciencia, s/n, 18006 Granada</direccion>
+<servicios>
+<servicio>Museo.</servicio>
+<servicio>BioDomo.</servicio>
+<servicio>Planetario.</servicio>
+</servicios>
+<contacto>
+<email>info@parqueciencias.com</email>
+</contacto>
+</parque>
+</parques>
